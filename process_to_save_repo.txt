@@ -1,0 +1,76 @@
+✅ Steps to Upload a Project to GitHub from CMD
+Step 1: Create a GitHub Repository
+Go to GitHub and log in.
+Click on the ➕ New Repository button.
+Enter a Repository Name (e.g., Portfolio).
+Select "Public" or "Private" (as per your preference).
+DO NOT initialize with a README (to avoid conflicts).
+Click Create Repository.
+Copy the repository URL (e.g., https://github.com/ARAVINDGIT96/Portfolio.git).
+Step 2: Open CMD and Navigate to Your Project Folder
+sh
+Copy
+Edit
+cd "C:\Users\Dell\OneDrive\Desktop\portfolio"
+Step 3: Initialize Git in the Folder
+sh
+Copy
+Edit
+git init
+This will create a hidden .git folder to track changes.
+
+Step 4: Connect to Your GitHub Repository
+sh
+Copy
+Edit
+git remote add origin https://github.com/ARAVINDGIT96/Portfolio.git
+To check if the remote was added correctly:
+
+sh
+Copy
+Edit
+git remote -v
+It should show:
+
+perl
+Copy
+Edit
+origin  https://github.com/ARAVINDGIT96/Portfolio.git (fetch)
+origin  https://github.com/ARAVINDGIT96/Portfolio.git (push)
+Step 5: Add and Commit Files
+sh
+Copy
+Edit
+git add .
+git commit -m "Initial commit"
+Step 6: Push the Code to GitHub
+sh
+Copy
+Edit
+git branch -M main
+git push -u origin main
+If you get an error about updates being rejected, try:
+sh
+Copy
+Edit
+git pull origin main --rebase --allow-unrelated-histories
+git push -u origin main --force
+Step 7: Verify on GitHub
+Go to your repo:
+🔗 GitHub Portfolio Repo
+Refresh the page—you should see your files uploaded!
+
+💡 Next Steps (Optional)
+Add a README.md (to describe your project):
+sh
+Copy
+Edit
+echo "# Portfolio Project" > README.md
+git add README.md
+git commit -m "Added README"
+git push
+Enable GitHub Pages (to host your portfolio site):
+Go to GitHub Repo → Settings → Pages.
+Under Source, select "main" branch and save.
+Your site will be available at:
+https://ARAVINDGIT96.github.io/Portfolio/

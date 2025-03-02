@@ -1,4 +1,4 @@
-/* Reset default margin, padding, and box-sizing */
+/* Reset default margin, padding, and box-sizing
 * {
     margin: 0;
     padding: 0;
@@ -72,12 +72,14 @@ tr, td {
     padding: 20px;
 }
 .ab {
-    width: 100%;
+    width: 1300px;
     align-items: center;
     justify-content: center;
+    height:100%;
 }
 .ac {
     background-color: #E0E0E0;
+    
 }
 
 /* Experience section */
@@ -155,4 +157,4 @@ textarea.name {
     justify-content: center;
     align-items: center;
     color: white;
-}
+} */
